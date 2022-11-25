@@ -1,0 +1,90 @@
+.container {
+  max-width: 50rem;
+  min-height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.container h1 {
+  margin: .5rem 0;
+}
+
+.container h2 {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.containerDescription {
+  margin: 1rem;
+  margin-top: 5rem;
+}
+
+.image {
+  
+}
+
+.icon {
+  border-radius: 10px;
+}
+
+.containerTitle {
+  margin: 15px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+
+/* carrousel */ 
+
+
+
+.exampleContainer {
+width: 100vw;
+height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align:center;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.root {
+  text-align: 'center';
+  display:flex;
+  flex-direction: column;
+}
+
+.imageItem {
+}
+
+.containerWithDots {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+ 

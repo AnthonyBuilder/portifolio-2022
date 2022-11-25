@@ -1,0 +1,117 @@
+.githubContainer {
+  display: flex;
+  flex-direction: "column";
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.githubContainer h3 {
+  font-weight: 400;
+  margin-left: .5rem;
+}
+
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+}
+
+.title,
+.description {
+  text-align: center;
+  padding: 10px
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.iconCard {
+  border-radius: 10px;
+}
+
+.imageScreen {
+  border-radius: 10px
+}
+
+
+.card {
+  flex-basis: 50%;
+  padding: 1rem 0 1rem 0;
+  margin: 1rem 0rem 0rem 0rem;
+  text-align: center;
+  color: white;
+  background: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 1px 2px -1px #888;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  box-shadow: 0px 1px 5px 1px #888;
+  color: #dedede;
+  transform: translateY(-5px);
+}
+
+.imageScreen {
+  transition: all .7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover .imageScreen {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  margin: .5rem 0 .5rem 0;
+  font-size: 1.5rem;
+}
+
+.card h4 {
+  margin: 0 0 0rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #676767;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: row;
+  }
+}
