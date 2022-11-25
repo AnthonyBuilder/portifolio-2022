@@ -15,9 +15,9 @@ const Slideshow = () => {
         '/print-invest-6.png',
         '/print-invest-7.png',
         '/print-invest-8.png',
-		'/print-invest-9.png',
-		'/print-invest-10.png',
-		'/print-invest-11.png'
+	'/print-invest-9.png',
+	'/print-invest-10.png',
+	'/print-invest-11.png'
       ];
 
 	//These are custom properties for zoom effect while slide-show
