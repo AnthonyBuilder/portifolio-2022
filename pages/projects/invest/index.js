@@ -29,21 +29,6 @@ export default function Invest() {
       }
     }
 
-    const responsive = {
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 1,
-      },
-      tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 1,
-      },
-      mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-      },
-    };
-
     return (
       <main>
         <motion.div initial="hidden" animate="visible" variants={birthElementsVariant} className={styles.container}>
@@ -76,6 +61,23 @@ export default function Invest() {
           </div>
         </motion.div>
 
+        <div className={styles.container}>
+          <div className={styles.containerDescription}>
+            <Image width={50} height={50} src='/db.png'></Image>
+            <h1>CoreData</h1>
+            <p>Foi utilizado CoreData para modelagem de dados onde o aplicativo se contecta com o firebase para armazenar os dados dos usuarios.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Testes Unitarios</h1>
+            <p>Possui testes unitarios para lidar com eventuais erros da api</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Segurança</h1>
+            <p>É utilizado criptografia para senhas definida pelo usuario e verificação por telefone.</p>
+          </div>
+        </div>
 
         <style jsx global>{`
 
@@ -86,7 +88,7 @@ export default function Invest() {
 
 
         p {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
 
         img {
@@ -98,6 +100,10 @@ export default function Invest() {
           height: 100%;
         }
 
+        .icon {
+          width: 100px;
+          height: 100px;
+        }
         .root {
           display:flex;
           flex-direction: column;
