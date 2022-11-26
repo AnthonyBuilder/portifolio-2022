@@ -3,22 +3,7 @@ import React from "react";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-const Slideshow = () => {
-    
-	//Array of Images
-    const images = [
-        '/print-invest-1.png',
-        '/print-invest-2.png',
-        '/print-invest-3.png',
-        '/print-invest-4.png',
-        '/print-invest-5.png',
-        '/print-invest-6.png',
-        '/print-invest-7.png',
-        '/print-invest-8.png',
-	'/print-invest-9.png',
-	'/print-invest-10.png',
-	'/print-invest-11.png'
-      ];
+const Slideshow = ({images}) => {
 
 	//These are custom properties for zoom effect while slide-show
 	const fadeInProperties = {

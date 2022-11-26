@@ -17,17 +17,9 @@ export default function Invest() {
 
   //Array of Images
   const images = [
-    '/print-invest-1.png',
-    '/print-invest-2.png',
-    '/print-invest-3.png',
-    '/print-invest-4.png',
-    '/print-invest-5.png',
-    '/print-invest-6.png',
-    '/print-invest-7.png',
-    '/print-invest-8.png',
-    '/print-invest-9.png',
-    '/print-invest-10.png',
-    '/print-invest-11.png'
+    '/maps-1.png',
+    '/maps-2.png',
+    '/maps-3.png',  
     ];
 
     const birthElementsVariant = {
@@ -48,23 +40,23 @@ export default function Invest() {
       <main>
         <motion.div initial="hidden" animate="visible" variants={birthElementsVariant} className={styles.container}>
           <div className={styles.containerTitle}>
-            <Image src="/investlogo.jpg" width={50} height={50} objectFit="contain" className={styles.icon}></Image>
+            <Image src="/maps-icon.png" width={50} height={50} objectFit="contain" className={styles.icon}></Image>
 
-            <h1>Invest Futuro</h1>
-            <h2>Aplicação iOS de uma fintech.</h2>
+            <h1>Maps</h1>
+            <h2>Clone do app Maps.</h2>
           </div>
 
           <div className={styles.containerImages} style={{
             'textAlign': 'center'
           }}>
-            <Image src="/print-invest.png" width={300} height={600} objectFit="contain" />
+            <Image src="/maps.png" width={300} height={600} objectFit="contain" />
           </div>
 
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
-            <p>O Aplicativo foi feito em SwiftUI, ele implementa uma api da Celcoin para enviar e receber pix,
-               além de pagar contas e realizar recargas de celular. 
-               o Backend é no Firebase onde ficam armazenados todos os usuarios e seus dados.</p>
+            <p>O aplicativo implementa as apis de localização da própria apple, ele utiliza a localização atual para definir o ponto inicial e busca no banco de dados o local que o usuario está buscando, definindo a rota com as coordenadas.
+              Também armazena no CoreData os locais favoritos do usuário.
+            </p>
           </div>
 
 
@@ -74,23 +66,6 @@ export default function Invest() {
             <Slideshow images={images}></Slideshow>
           </div>
         </motion.div>
-
-        <div className={styles.container}>
-          <div className={styles.containerDescription}>
-            <h1>CoreData</h1>
-            <p>Foi utilizado CoreData para modelagem de dados onde o aplicativo se contecta com o firebase para armazenar os dados dos usuarios.</p>
-          </div>
-
-          <div className={styles.containerDescription}>
-            <h1>Testes Unitarios</h1>
-            <p>Possui testes unitarios para corrigir bugs.</p>
-          </div>
-
-          <div className={styles.containerDescription}>
-            <h1>Segurança</h1>
-            <p>É utilizado criptografia para senhas definida pelo usuario e verificação por telefone.</p>
-          </div>
-        </div>
 
         <style jsx global>{`
 
