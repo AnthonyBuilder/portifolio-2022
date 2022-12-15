@@ -90,6 +90,11 @@ export default function Invest() {
             <h1>Segurança</h1>
             <p>É utilizado criptografia para senhas definida pelo usuario e verificação por telefone.</p>
           </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Webhook</h1>
+            <p>Webhook para notificar os usuarios sobre os pagamentos e recebimentos.</p>
+          </div>
         </div>
 
         <style jsx global>{`

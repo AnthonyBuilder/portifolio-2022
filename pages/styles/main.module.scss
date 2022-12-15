@@ -1,15 +1,20 @@
-.githubContainer {
+.contactItems {
   display: flex;
-  flex-direction: "column";
   justify-content: center;
-  margin-top: 3rem;
+  margin: 1rem;
+  margin-top: 10vh;
 }
 
-.githubContainer h3 {
+.contactItems h3 {
   font-weight: 400;
-  margin-left: .5rem;
+  margin-left: 10px;
 }
 
+.columnFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .container {
   min-height: 100vh;
@@ -114,4 +119,16 @@
     width: 100%;
     flex-direction: row;
   }
+}
+
+.imageProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.imageProfile:hover {
+  transform: scale(1.1);
 }

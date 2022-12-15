@@ -37,6 +37,7 @@ const Slideshow = ({images}) => {
 			</div>
 		),
 	};
+
 	return (
 		<div className="m-10">
 			<Fade {...fadeInProperties}>

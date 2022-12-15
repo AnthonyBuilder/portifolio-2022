@@ -4,14 +4,11 @@ import Link from 'next/link';
 
 import { 
   motion, 
-  useAnimation,
-  useScroll,
-  AnimatePresence, 
+  useScroll, 
 } from 'framer-motion';
   
 import { useRef, useState } from 'react';
 
-import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import styles from "./styles/main.module.scss"
@@ -80,17 +77,28 @@ export default function Home() {
             </p>
           </div>
 
-          <div>
+          <div className={styles.imageProfile}>
+            <a href="https://wa.me/5511942807999">
             <Image src='/profile.jpeg' width={200} height={200} objectFit="cover" style={{
               "border-radius": "100%"
-            }}></Image>
+            }}>
+            </Image>
+            </a>
           </div>
 
-          <motion.div className={styles.githubContainer}>
-            <Image src="/github-icon.png" width={35} height={35} objectFit="contain"></Image>
-            <h3>AnthonyBuilder</h3>
-          </motion.div>
+          <div className={styles.columnFlex}>
+            <motion.div className={styles.contactItems}>
+              <Image src="/github-icon.png" width={35} height={35} objectFit="contain"></Image>
+              <a href='https://github.com/AnthonyBuilder'><h3>AnthonyBuilder</h3></a>
+            </motion.div>
+
+            <motion.div className={styles.contactItems}>
+              <Image src="/linkedin.jpeg" width={35} height={35} objectFit="contain"></Image>
+              <a href='https://www.linkedin.com/in/anthony-josé-94b151144/'><h3>Linkedin</h3></a>
+            </motion.div>
+          </div>
         </motion.div>
+        
 
         <Projetos></Projetos>
 
