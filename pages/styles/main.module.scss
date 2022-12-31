@@ -130,5 +130,31 @@
 }
 
 .imageProfile:hover {
+  
   transform: scale(1.1);
+}
+
+.textProfile {
+  transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  z-index: 100;
+  opacity: 0;
+}
+
+.imageProfile:hover .textProfile {
+  opacity: 1;
+}
+
+.imageProfile:hover .image{
+  filter: brightness(50%);
+}
+
+.image {
+  transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
 }

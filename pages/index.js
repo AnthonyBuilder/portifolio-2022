@@ -8,18 +8,12 @@ import {
 } from 'framer-motion';
   
 import { useRef, useState } from 'react';
-
 import { useEffect } from "react";
-
 import styles from "./styles/main.module.scss"
-
 import Projetos from "../components/pages/Projetos"
 
+
 export default function Home() {
-
-  
-  const { scrollYProgress } = useScroll();
-
 
   const name = "Anthony José"
 
@@ -37,7 +31,6 @@ export default function Home() {
     };
   }, []);
   
-
   return (
     
     <div className={styles.container}>
@@ -79,10 +72,15 @@ export default function Home() {
 
           <div className={styles.imageProfile}>
             <a href="https://wa.me/5511942807999">
-            <Image src='/profile.jpeg' width={200} height={200} objectFit="cover" style={{
-              "border-radius": "100%"
-            }}>
-            </Image>
+              <div className={styles.image} >
+              <Image src='/profile.jpeg' width={200} height={200} objectFit="cover" style={{
+                "border-radius": "100%"
+              }}>
+              </Image>
+              </div>
+              <div className={styles.textProfile }>
+                <h6>Whatsapp</h6>
+              </div>
             </a>
           </div>
 
