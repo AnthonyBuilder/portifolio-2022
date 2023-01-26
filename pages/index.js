@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { 
   motion, 
   useScroll, 
@@ -35,6 +34,8 @@ export default function Home() {
     
     <div className={styles.container}>
       <Head>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8762893864776699"
+        crossorigin="anonymous"></script>
         <title>Portifolio {name}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
