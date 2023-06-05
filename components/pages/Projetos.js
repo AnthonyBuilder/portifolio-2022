@@ -58,7 +58,10 @@ const Projetos = () => {
                 }}>
                     <Card titulo={"Invest Futuro"} subtitulo={"Aplicação iOS em SwiftUI"} image="/print-invest.png" iconName="/investlogo.jpg" link="projects/invest" />
                     <Card titulo={"Maps"} subtitulo={"Clone maps em SwiftUI"} image="/maps.png"  iconName="/maps-icon.png" link="projects/maps"/>                   
+                    <Card titulo={"ImagineIA"} subtitulo={"Gerar imagens através da OpenIA"} iconName="/appstore.png" image="/imagineia/screenshotmain.png" link="projects/ImagineIA"/>
+                    <Card titulo={"DeliverTrack"} subtitulo={"App para rastrear encomendas"} iconName="/delivertrackicon.png" image="/deliverTrack.png" link="projects/DeliverTrack"/>
                     <Card titulo={"Memorize Game"} subtitulo={"Jogo de memória curso cs193p"} iconName="/memory-icon.webp" image="/memorize.png" link="projects/memorize"/>
+
                 </div>
             </motion.div>
         </AnimatePresence>
