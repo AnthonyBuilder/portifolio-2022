@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Image from 'next/image';
 import Link from "next/link";
@@ -13,7 +14,14 @@ import { useRef, useState } from 'react';
 
 import styles from './styles/main.module.scss'
 
-export default function Invest() {
+export default function DeliverTrack() {
+    //Array of Images
+    const images = [
+      '/delivertrack/screenshot1.jpeg',
+      '/delivertrack/screenshot2.jpeg',
+      '/delivertrack/screenshot3.jpeg',
+      '/delivertrack/screenshot4.jpeg'
+      ];
 
     const birthElementsVariant = {
       hidden: {
@@ -33,29 +41,34 @@ export default function Invest() {
       <main>
         <motion.div initial="hidden" animate="visible" variants={birthElementsVariant} className={styles.container}>
           <div className={styles.containerTitle}>
-            <Image src="/memory-icon.webp" width={50} height={50} objectFit="contain" className={styles.icon}></Image>
+            <Image src="/delivertrackicon.png" width={50} height={50} objectFit="contain" className={styles.icon}></Image>
 
-            <h1>Memorize</h1>
-            <h2>Clone do curso cs193p</h2>
+            <h1>DeliverTrack</h1>
+            <h2>Aplicação própria iOS.</h2>
           </div>
 
           <div className={styles.containerImages} style={{
             'textAlign': 'center'
           }}>
-            <Image src="/memorize.png" width={300} height={600} objectFit="contain" />
+            <Image src="/deliverTrack.png" width={300} height={600} objectFit="contain" />
           </div>
+
+          <a href='https://apple.co/3WQ7Xda'>
+              <Image src="/btDownload.svg" width={250} height={63} objectFit="contain"></Image>
+            </a>
 
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
-            <p>
-              Esse jogo implementa a arquitetura MVVM que define como a logica do jogo funciona e entrega ao usuario os resultados com animações.
+            <p>O aplicativo foi projetetado em swiftui realizando chamadas a uma api criada em NextJS para obter dados de objetos rastreaveis atráves do correios.
+              O objetivo é mante-lo atualizado buscando adquirir novos clientes, implementando novas empresas de transporte.
             </p>
           </div>
-          
-          <div className={styles.movieContainer}>
-          <video autoPlay loop style={{ height: '100vh' }} controls>
-            <source src="/memorize-scene.mov" />
-          </video>
+
+
+          <div style={{
+            'margin-top': '2rem',
+          }} className='image-slider'>
+            <Slideshow images={images}></Slideshow>
           </div>
         </motion.div>
 

@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Image from 'next/image';
 import Link from "next/link";
@@ -9,11 +10,18 @@ import {
   motion,
 } from 'framer-motion';
 
-import { useRef, useState } from 'react';
-
 import styles from './styles/main.module.scss'
 
-export default function Invest() {
+import AppStoreButton from 'react-appstore-button';
+
+export default function ImagineIA() {
+    //Array of Images
+    const images = [
+      '/imagineia/screenshot1.png',
+      '/imagineia/screenshot2.png',
+      '/imagineia/screenshot3.png',
+      '/imagineia/screenshot4.png'
+      ];
 
     const birthElementsVariant = {
       hidden: {
@@ -33,29 +41,37 @@ export default function Invest() {
       <main>
         <motion.div initial="hidden" animate="visible" variants={birthElementsVariant} className={styles.container}>
           <div className={styles.containerTitle}>
-            <Image src="/memory-icon.webp" width={50} height={50} objectFit="contain" className={styles.icon}></Image>
+            <Image src="/appstore.png" width={50} height={50} objectFit="contain" className={styles.icon}></Image>
 
-            <h1>Memorize</h1>
-            <h2>Clone do curso cs193p</h2>
+            <h1>ImagineIA</h1>
+            <h2>Aplicação própria iOS.</h2>
           </div>
 
           <div className={styles.containerImages} style={{
             'textAlign': 'center'
           }}>
-            <Image src="/memorize.png" width={300} height={600} objectFit="contain" />
+            
+            <Image src="/imagineia/screenshotmain.png" width={300} height={600} objectFit="contain" />
           </div>
+
+          <a href='https://apple.co/45GwDcd'>
+              <Image src="/btDownload.svg" width={250} height={63} objectFit="contain"></Image>
+            </a>
 
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
             <p>
-              Esse jogo implementa a arquitetura MVVM que define como a logica do jogo funciona e entrega ao usuario os resultados com animações.
+              ImagineIA é um aplicativo simples para gerar imagens através de texto usando a API da Dall-E,
+            é uma simples requisição utilizando o prompt do usuario, nas proximas versões será adicionado o recurso
+            de gerar variaçoes de imagens apartir de uma imagem salva no dispositivo.
             </p>
           </div>
-          
-          <div className={styles.movieContainer}>
-          <video autoPlay loop style={{ height: '100vh' }} controls>
-            <source src="/memorize-scene.mov" />
-          </video>
+
+
+          <div style={{
+            'margin-top': '2rem',
+          }} className='image-slider'>
+            <Slideshow images={images}></Slideshow>
           </div>
         </motion.div>
 

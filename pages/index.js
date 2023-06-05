@@ -105,9 +105,7 @@ export default function Home() {
 
      
       <motion.footer>
-        <h3>
-          Feito com NextJS
-        </h3>
+        <h5>© 2023 Anthony José - Feito em NextJS</h5>
       </motion.footer>
 
       <style jsx global>{`
@@ -120,6 +118,7 @@ export default function Home() {
           margin-bottom: 300px;
         }
 
+
         footer {
           width: 100%;
           height: 100px;
@@ -127,6 +126,7 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
+          font-weight: 500
         }
 
         footer img {
