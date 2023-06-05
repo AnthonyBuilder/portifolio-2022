@@ -12,8 +12,6 @@ import {
 
 import styles from './styles/main.module.scss'
 
-import AppStoreButton from 'react-appstore-button';
-
 export default function ImagineIA() {
     //Array of Images
     const images = [
