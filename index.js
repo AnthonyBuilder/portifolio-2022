@@ -10,7 +10,7 @@ import { useRef, useState } from 'react';
 import { useEffect } from "react";
 import styles from "./styles/main.module.scss"
 import Projetos from "../components/pages/Projetos"
-
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 
@@ -168,6 +168,8 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
+
+    <Analytics />
     </div>
   )
 }
