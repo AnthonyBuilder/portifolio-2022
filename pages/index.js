@@ -34,6 +34,14 @@ export default function Home() {
     
     <div className={styles.container}>
       <Head>
+          <meta name='description' content='Desenvolvedor freelancer web e mobile' />
+          <meta property='og:title' content='Portifolio Desenvolvedor' />
+          <meta
+            property='og:description'
+            content='Desenvolvedor Mobile, Web, Full-Stack'
+          />
+          <meta property='og:url' content='https://anthonyjs.vercel.app/' />
+          <meta property='og:type' content='website' />
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8762893864776699"
         crossorigin="anonymous"></script>
         <title>Portifolio {name}</title>
