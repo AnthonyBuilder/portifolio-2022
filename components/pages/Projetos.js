@@ -40,15 +40,15 @@ const Projetos = () => {
                     }
                 },
             }}>
-                <motion.h1 style={{
-                    "margin": "0rem 0rem .5rem 1rem",
+                <h1 style={{
+                    "margin": "0rem 0rem .5rem 5rem",
                     "font-weight": "800",
                     "font-size": "2rem"
-                }}>Projetos</motion.h1>
-                <motion.h3 style={{
-                    "margin": "0rem 0rem 1rem 1rem",
+                }}>Projetos</h1>
+                <h3 style={{
+                    "margin": "0rem 0rem 1rem 5rem",
                     "color": "#676767"
-                }}>Aplicações Mobile</motion.h3>
+                }}>Aplicações Mobile</h3>
                 <div style={{
                     "display": "flex",
                     "align-items": "center",

@@ -10,6 +10,8 @@ import { useRef, useState } from 'react';
 import { useEffect } from "react";
 import styles from "./styles/main.module.scss"
 import Projetos from "../components/pages/Projetos"
+import Presentation from "../components/pages/Presentation"
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Home() {
@@ -34,14 +36,6 @@ export default function Home() {
     
     <div className={styles.container}>
       <Head>
-          <meta name='description' content='Desenvolvedor freelancer web e mobile' />
-          <meta property='og:title' content='Portifolio Desenvolvedor' />
-          <meta
-            property='og:description'
-            content='Desenvolvedor Mobile, Web, Full-Stack'
-          />
-          <meta property='og:url' content='https://anthonyjs.vercel.app/' />
-          <meta property='og:type' content='website' />
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8762893864776699"
         crossorigin="anonymous"></script>
         <title>Portifolio {name}</title>
@@ -105,8 +99,12 @@ export default function Home() {
             </motion.div>
           </div>
         </motion.div>
-        
 
+        <Presentation></Presentation>
+        
+        <div style={{
+          "margin-top": "300px"
+        }}></div>
         <Projetos></Projetos>
 
       </main>
@@ -176,6 +174,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
+      <Analytics />
     </div>
   )
 }
