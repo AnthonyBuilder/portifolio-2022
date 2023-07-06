@@ -41,12 +41,12 @@ const Projetos = () => {
                 },
             }}>
                 <h1 style={{
-                    "margin": "0rem 0rem .5rem 5rem",
+                    "margin": "0rem 0rem .5rem 2rem",
                     "font-weight": "800",
                     "font-size": "2rem"
                 }}>Projetos</h1>
                 <h3 style={{
-                    "margin": "0rem 0rem 1rem 5rem",
+                    "margin": "0rem 0rem 1rem 2rem",
                     "color": "#676767"
                 }}>Aplicações Mobile</h3>
                 <div style={{
