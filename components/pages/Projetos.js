@@ -26,14 +26,14 @@ const Projetos = () => {
         <AnimatePresence>
             <motion.div className={styles.sectionProjects} ref={ref} initial="hidden" animate={control} exit="hidden" variants={{
                 hidden: {
-                    scale: 0.8,
+                    translateX: -100,
                     opacity: 0,
                     transition: {
                         ease: "anticipate", duration: 1
                     }
                 },
                 visible: {
-                    scale: 1,
+                    translateX: 0,
                     opacity: 1,
                     transition: {
                         ease: [0.19, 1, 0.22, 1], duration: 2.5

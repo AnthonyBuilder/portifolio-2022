@@ -59,16 +59,21 @@ const Presentation = () => {
                 <h1 style={{
                     "margin": "0rem 0rem .5rem 1rem",
                     "font-weight": "800",
-                    "font-size": "5rem"
+                    "font-size": "6vw"
                 }}>Desenvolvedor Full stack</h1>
                 <h3 style={{
                     "margin": "0rem 0rem 1rem 1rem",
                     "color": "#676767",
-                    "font-size": "2.5rem"
+                    "font-size": "3vw"
                 }}>Mobile e Web</h3>
 
-                <Carrousel></Carrousel>
-
+                <div style={{"display": "flex",
+                    "align-items": "center",
+                    "justify-content": "center",
+                    "flex-wrap": "wrap",
+                    "max-width": "100%"}}>
+                    <Carrousel></Carrousel>
+                </div>
 
             </motion.div>
         </AnimatePresence>
