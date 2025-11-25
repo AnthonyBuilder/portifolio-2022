@@ -74,7 +74,7 @@ export default function Home() {
           </div>
 
           <div className={styles.imageProfile}>
-            <a href="https://wa.me/5511942807999">
+            <a href="https://wa.me/5511939575273">
               <div className={styles.image} >
               <Image src='/profile.jpeg' width={200} height={200} objectFit="cover" style={{
                 "border-radius": "100%"
