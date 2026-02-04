@@ -96,7 +96,9 @@ const HeroSection = ({ name, scrollPosition }) => {
 
       <div className={styles.columnFlex} style={{
         gap: '2rem',
-        marginTop: '2.5rem'
+        marginTop: '2.5rem',
+        flexDirection: 'row',
+        flexWrap: 'nowrap'
       }}>
         <a href="https://github.com/AnthonyBuilder" style={{
           display: 'flex',
