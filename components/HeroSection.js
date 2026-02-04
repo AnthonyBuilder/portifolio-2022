@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import styles from '../pages/styles/main.module.scss';
 
 const HeroSection = ({ name, scrollPosition }) => {
+  const imageScale = Math.max(1 - scrollPosition / 700.0, 0.55);
+  const textScale = Math.max(1 - scrollPosition / 2400.0, 0.9);
+
   return (
     <motion.div
       style={{
@@ -19,7 +22,7 @@ const HeroSection = ({ name, scrollPosition }) => {
       animate="visible"
       variants={{
         hidden: {
-          scale: 0.9,
+          scale: 1,
           opacity: 0,
           transition: {
             ease: 'anticipate',
@@ -27,7 +30,7 @@ const HeroSection = ({ name, scrollPosition }) => {
           },
         },
         visible: {
-          scale: Math.max(1 - scrollPosition / 1500.0, 0.4),
+          scale: 1,
           opacity: Math.max(1 - scrollPosition / 500.0, 0),
           transition: {
             ease: [0.19, 1, 0.22, 1],
@@ -36,7 +39,10 @@ const HeroSection = ({ name, scrollPosition }) => {
         },
       }}
     >
-      <div className={styles.imageProfile}>
+      <div className={styles.imageProfile} style={{
+        transform: `scale(${imageScale})`,
+        transformOrigin: 'center top'
+      }}>
         <a href="https://wa.me/5511939575273">
           <div className={styles.image}>
             <Image
@@ -60,7 +66,9 @@ const HeroSection = ({ name, scrollPosition }) => {
         marginBottom: '-0.4rem',
         color: '#6b7280',
         fontWeight: '900',
-        letterSpacing: '-1px'
+        letterSpacing: '-1px',
+        transform: `scale(${textScale})`,
+        transformOrigin: 'center top'
       }}>Bem vindo ao meu portfólio.</h1>
 
       <div>
@@ -69,7 +77,9 @@ const HeroSection = ({ name, scrollPosition }) => {
           color: '#7a8a9c',
           marginTop: '0',
           marginBottom: '0.2rem',
-          fontWeight: '600'
+          fontWeight: '600',
+          transform: `scale(${textScale})`,
+          transformOrigin: 'center top'
         }}>Meu nome é <span style={{ color: '#38bdf8' }}>{name}</span></p>
       </div>
 
