@@ -14,8 +14,14 @@ const HeroSection = ({ name, scrollPosition }) => {
   }, []);
 
   const imageScale = Math.max(1 - scrollPosition / (isMobile ? 900.0 : 700.0), isMobile ? 0.7 : 0.55);
-  const textScale = Math.max(1 - scrollPosition / (isMobile ? 3200.0 : 2400.0), isMobile ? 0.95 : 0.9);
-  const textOpacity = Math.max(1 - scrollPosition / (isMobile ? 700.0 : 500.0), isMobile ? 0.75 : 0);
+  const textScale = isMobile ? 1 : Math.max(1 - scrollPosition / 2400.0, 0.9);
+  const textOpacity = Math.max(1 - scrollPosition / (isMobile ? 450.0 : 320.0), isMobile ? 0.6 : 0);
+  const wobble = Math.sin(scrollPosition / 180.0) * (isMobile ? 2.5 : 5);
+  const tilt = Math.cos(scrollPosition / 240.0) * (isMobile ? 2 : 4);
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+  const imageShift = clamp(scrollPosition / 6, -45, 45);
+  const titleShift = clamp(scrollPosition / 10, -28, 28);
+  const nameShift = clamp(scrollPosition / 12, -24, 24);
 
   return (
     <motion.div
@@ -28,6 +34,8 @@ const HeroSection = ({ name, scrollPosition }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        perspective: '900px',
+        transformStyle: 'preserve-3d'
       }}
       initial="hidden"
       animate="visible"
@@ -51,8 +59,10 @@ const HeroSection = ({ name, scrollPosition }) => {
       }}
     >
       <div className={styles.imageProfile} style={{
-        transform: `scale(${imageScale})`,
-        transformOrigin: 'center top'
+        transform: `translate3d(0, ${imageShift}px, 0) scale(${imageScale}) rotateX(${tilt}deg) rotateY(${wobble}deg)`,
+        transformOrigin: 'center top',
+        willChange: 'transform',
+        backfaceVisibility: 'hidden'
       }}>
         <a href="https://wa.me/5511939575273">
           <div className={styles.image}>
@@ -78,8 +88,10 @@ const HeroSection = ({ name, scrollPosition }) => {
         color: '#6b7280',
         fontWeight: '900',
         letterSpacing: '-1px',
-        transform: `scale(${textScale})`,
-        transformOrigin: 'center top'
+        transform: `translate3d(0, ${titleShift}px, 0) scale(${textScale}) rotateX(${tilt * 0.6}deg) rotateY(${wobble * 0.6}deg)`,
+        transformOrigin: 'center top',
+        willChange: 'transform',
+        backfaceVisibility: 'hidden'
       }}>Bem vindo ao meu portfólio.</h1>
 
       <div>
@@ -89,8 +101,10 @@ const HeroSection = ({ name, scrollPosition }) => {
           marginTop: '0',
           marginBottom: '0.2rem',
           fontWeight: '600',
-          transform: `scale(${textScale})`,
-          transformOrigin: 'center top'
+          transform: `translate3d(0, ${nameShift}px, 0) scale(${textScale}) rotateX(${tilt * 0.4}deg) rotateY(${wobble * 0.4}deg)`,
+          transformOrigin: 'center top',
+          willChange: 'transform',
+          backfaceVisibility: 'hidden'
         }}>Meu nome é <span style={{ color: '#38bdf8' }}>{name}</span></p>
       </div>
 
