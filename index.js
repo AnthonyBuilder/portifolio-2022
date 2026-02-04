@@ -14,7 +14,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 
-  const name = "Anthony José"
+  const name = "Anthony José de A. Silva"
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {

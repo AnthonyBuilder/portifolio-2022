@@ -75,12 +75,11 @@ const Presentation = () => {
                     "font-weight": "900",
                     "font-size": "clamp(1.89rem, 3.675vw, 3.36rem)",
                     "text-align": "center",
-                    "color": "#ffffff",
+                    "color": "#5d6977",
                     "letter-spacing": "-0.5px"
                 }}>Desenvolvedor Full stack</h1>
                 <h3 style={{
-                    "margin": "2rem 0rem 1rem 0rem",
-                    "color": "#676767",
+                    "color": "#8fa4c4",
                     "font-size": "clamp(1rem, 3vw, 1.4rem)",
                     "text-align": "center"
                 }}>Mobile e Web</h3>
