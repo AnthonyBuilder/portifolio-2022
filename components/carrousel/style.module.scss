@@ -11,7 +11,7 @@ $animationSpeed: 50s;
 	background: #000000;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 	border-radius: 16px;
-	height: clamp(80px, 12vw, 120px);
+	height: clamp(60px, 10vw, 90px);
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -54,7 +54,7 @@ $animationSpeed: 50s;
 		align-items: center;
 		justify-content: center;
 		flex-shrink: 0;
-		padding: 2.5rem 0;
+		padding: 1rem 0;
 
 		h1 {
 			font-size: clamp(1.1rem, 3.5vw, 1.5rem);
@@ -66,6 +66,8 @@ $animationSpeed: 50s;
 			white-space: nowrap;
 			transition: all 0.3s ease;
 			margin: 0;
+			padding: 0;
+			line-height: 1;
 			text-shadow: 0 0 8px rgba(56, 189, 248, 0.4), 0 2px 4px rgba(0, 0, 0, 0.6);
 		}
 
