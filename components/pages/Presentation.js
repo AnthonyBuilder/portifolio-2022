@@ -1,11 +1,10 @@
-
 import {
     motion,
     useAnimation,
     AnimatePresence
 } from 'framer-motion';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import styles from '../../pages/styles/main.module.scss'
 
@@ -22,21 +21,6 @@ const Presentation = () => {
             control.start("hidden");
         }
     }, [control, inView]);
-
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const handleScroll = () => {
-        const position = window.pageYOffset;
-        setScrollPosition(position);
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-        window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-  
 
     return (
         <AnimatePresence>
@@ -57,14 +41,14 @@ const Presentation = () => {
                 },
             }}>
                 <h1 style={{
-                    "margin": "0rem 0rem .5rem 1rem",
+                    "margin": "0rem 0rem .5rem clamp(0.5rem, 5vw, 2rem)",
                     "font-weight": "800",
-                    "font-size": "6vw"
+                    "font-size": "clamp(1.8rem, 3.5vw, 3.2rem)"
                 }}>Desenvolvedor Full stack</h1>
                 <h3 style={{
-                    "margin": "0rem 0rem 1rem 1rem",
+                    "margin": "0rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
                     "color": "#676767",
-                    "font-size": "3vw"
+                    "font-size": "clamp(1rem, 2vw, 1.6rem)"
                 }}>Mobile e Web</h3>
 
                 <div style={{"display": "flex",

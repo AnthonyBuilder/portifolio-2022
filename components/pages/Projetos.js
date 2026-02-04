@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import styles from '../../pages/styles/main.module.scss'
 import Card from '../Card'
+import Slideshow from '../Slideshow'
 
 const Projetos = () => {
     const control = useAnimation();
@@ -41,13 +42,23 @@ const Projetos = () => {
                 },
             }}>
                 <h1 style={{
-                    "margin": "0rem 0rem .5rem 2rem",
+                    "margin": "0rem 0rem .5rem clamp(0.5rem, 5vw, 2rem)",
                     "font-weight": "800",
-                    "font-size": "2rem"
+                    "font-size": "clamp(1.8rem, 5vw, 2.5rem)"
                 }}>Projetos</h1>
                 <h3 style={{
-                    "margin": "0rem 0rem 1rem 2rem",
-                    "color": "#676767"
+                    "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
+                    "color": "#676767",
+                    "font-size": "clamp(1rem, 3vw, 1.4rem)"
+                }}>Sites Web</h3>
+                <Slideshow slides={[
+                    { src: "/lingatec_frame.png", href: "https://ling-pied.vercel.app/", title: "Lingatec", subtitle: "Site institucional" },
+                    { src: "/papodepanela_frame.png", href: "https://papodepanela.site", title: "Papo de Panela", subtitle: "Projeto web" }
+                ]} height={820} />
+                <h3 style={{
+                    "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
+                    "color": "#676767",
+                    "font-size": "clamp(1rem, 3vw, 1.4rem)"
                 }}>Aplicações Mobile</h3>
                 <div style={{
                     "display": "flex",

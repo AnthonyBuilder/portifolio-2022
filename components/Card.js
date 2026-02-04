@@ -15,6 +15,8 @@ import styles from "../pages/styles/main.module.scss"
 
 const Card = ({ titulo, subtitulo, image, iconName, link }) => {
 
+  const isExternalLink = link?.startsWith("http");
+
     const control = useAnimation();
     const [ref, inView] = useInView();
   
@@ -27,8 +29,7 @@ const Card = ({ titulo, subtitulo, image, iconName, link }) => {
     }, [control, inView]);
   
   
-    return (
-      <Link href={link ?? ""}>
+    const cardContent = (
       <motion.div ref={ref} exit="pageExit" variants={{
         pageExit: {
           backgroundColor: 'black',
@@ -50,6 +51,19 @@ const Card = ({ titulo, subtitulo, image, iconName, link }) => {
   
       </div>
       </motion.div>
+    );
+
+    if (isExternalLink) {
+      return (
+        <a href={link} target="_blank" rel="noreferrer">
+          {cardContent}
+        </a>
+      );
+    }
+
+    return (
+      <Link href={link ?? ""}>
+        {cardContent}
       </Link>
     );
   };
