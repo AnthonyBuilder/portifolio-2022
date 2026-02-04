@@ -1,10 +1,21 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import styles from '../pages/styles/main.module.scss';
 
 const HeroSection = ({ name, scrollPosition }) => {
-  const imageScale = Math.max(1 - scrollPosition / 700.0, 0.55);
-  const textScale = Math.max(1 - scrollPosition / 2400.0, 0.9);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 600);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const imageScale = Math.max(1 - scrollPosition / (isMobile ? 900.0 : 700.0), isMobile ? 0.7 : 0.55);
+  const textScale = Math.max(1 - scrollPosition / (isMobile ? 3200.0 : 2400.0), isMobile ? 0.95 : 0.9);
+  const textOpacity = Math.max(1 - scrollPosition / (isMobile ? 700.0 : 500.0), isMobile ? 0.75 : 0);
 
   return (
     <motion.div
@@ -31,7 +42,7 @@ const HeroSection = ({ name, scrollPosition }) => {
         },
         visible: {
           scale: 1,
-          opacity: Math.max(1 - scrollPosition / 500.0, 0),
+          opacity: textOpacity,
           transition: {
             ease: [0.19, 1, 0.22, 1],
             duration: 1,
