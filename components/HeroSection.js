@@ -13,7 +13,7 @@ const HeroSection = ({ name, scrollPosition }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const imageScale = Math.max(1 - scrollPosition / (isMobile ? 900.0 : 700.0), isMobile ? 0.7 : 0.55);
+  const imageScale = isMobile ? 1 : Math.max(1 - scrollPosition / 700.0, 0.55);
   const textScale = isMobile ? 1 : Math.max(1 - scrollPosition / 2400.0, 0.9);
   const textOpacity = Math.max(1 - scrollPosition / (isMobile ? 450.0 : 320.0), isMobile ? 0.6 : 0);
   const wobble = Math.sin(scrollPosition / 180.0) * (isMobile ? 2.5 : 5);
