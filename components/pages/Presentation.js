@@ -40,15 +40,47 @@ const Presentation = () => {
                     }
                 },
             }}>
+                <div style={{
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "align-items": "center",
+                    "justify-content": "center",
+                    "width": "100%",
+                    "padding": "0 clamp(1rem, 4vw, 2rem)"
+                }}>
+                    <p style={{
+                        "margin": "0rem 0rem 1.5rem 0rem",
+                        "color": "#9ca3af",
+                        "font-size": "clamp(1rem, 2.2vw, 1.4rem)",
+                        "max-width": "720px",
+                        "line-height": "1.8",
+                        "text-align": "center",
+                        "font-weight": "500"
+                    }}>
+                        Desenvolvedor Full Stack especializado em criar produtos Web e Mobile funcionais, escaláveis e prontos para produção.
+                    </p>
+                    <p style={{
+                        "margin": "0rem 0rem 5rem 0rem",
+                        "color": "#6b7280",
+                        "font-size": "clamp(0.9rem, 1.9vw, 1.1rem)",
+                        "max-width": "720px",
+                        "line-height": "1.7",
+                        "text-align": "center"
+                    }}>
+                        Com experiência prática em sistemas de autenticação e gestão de usuários, gerenciamento de conteúdo dinâmico e deploy em ambientes de produção real. Transformo ideias em soluções tecnológicas robustas.
+                    </p>
+                </div>
                 <h1 style={{
                     "margin": "0rem 0rem .5rem clamp(0.5rem, 5vw, 2rem)",
                     "font-weight": "800",
-                    "font-size": "clamp(1.8rem, 3.5vw, 3.2rem)"
+                    "font-size": "clamp(1.8rem, 3.5vw, 3.2rem)",
+                    "text-align": "center"
                 }}>Desenvolvedor Full stack</h1>
                 <h3 style={{
                     "margin": "0rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
                     "color": "#676767",
-                    "font-size": "clamp(1rem, 2vw, 1.6rem)"
+                    "font-size": "clamp(1rem, 2vw, 1.6rem)",
+                    "text-align": "center"
                 }}>Mobile e Web</h3>
 
                 <div style={{"display": "flex",

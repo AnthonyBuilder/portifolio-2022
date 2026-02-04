@@ -5,7 +5,7 @@ import {
     AnimatePresence
 } from 'framer-motion';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useInView } from "react-intersection-observer";
 import styles from '../../pages/styles/main.module.scss'
 import Card from '../Card'
@@ -14,6 +14,17 @@ import Slideshow from '../Slideshow'
 const Projetos = () => {
     const control = useAnimation();
     const [ref, inView] = useInView();
+    const [sliderHeight, setSliderHeight] = useState(820);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setSliderHeight(window.innerWidth < 768 ? 400 : 820);
+        };
+        
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     useEffect(() => {
         if (inView) {
@@ -54,7 +65,7 @@ const Projetos = () => {
                 <Slideshow slides={[
                     { src: "/lingatec_frame.png", href: "https://ling-pied.vercel.app/", title: "Lingatec", subtitle: "Site institucional" },
                     { src: "/papodepanela_frame.png", href: "https://papodepanela.site", title: "Papo de Panela", subtitle: "Projeto web" }
-                ]} height={820} />
+                ]} height={sliderHeight} />
                 <h3 style={{
                     "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
                     "color": "#676767",
@@ -66,6 +77,7 @@ const Projetos = () => {
                     "justify-content": "center",
                     "flex-wrap": "wrap",
                     "max-width": "100%",
+                    "gap": "1.5rem"
                 }}>
                     <Card titulo={"Invest Futuro"} subtitulo={"Aplicação iOS em SwiftUI"} image="/print-invest.png" iconName="/investlogo.jpg" link="projects/invest" />
                     <Card titulo={"Maps"} subtitulo={"Clone maps em SwiftUI"} image="/maps.png"  iconName="/maps-icon.png" link="projects/maps"/>                   

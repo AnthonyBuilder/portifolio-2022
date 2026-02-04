@@ -26,10 +26,9 @@ const Slideshow = ({ images = [], slides = [], height = 520, interval = 4500 }) 
 			height,
 			margin: "2rem 0 3rem 0",
 			padding: "1.5rem",
-			background: "#000000",
+			background: "rgba(0, 0, 0, 0.9)",
 			borderRadius: "24px",
-			boxShadow: "0 20px 60px rgba(0,0,0,0.35)",
-			border: "1px solid rgba(255,255,255,0.08)"
+			boxShadow: "0 20px 60px rgba(0,0,0,0.35)"
 		}}>
 			<div style={{
 				height: "100%",
@@ -69,7 +68,7 @@ const Slideshow = ({ images = [], slides = [], height = 520, interval = 4500 }) 
 										margin: "0 auto",
 										borderRadius: "18px",
 										boxShadow: "0 14px 40px rgba(0,0,0,0.35)",
-										border: "1px solid rgba(255,255,255,0.08)",
+
 										background: "rgba(2,6,23,0.25)"
 									}}
 								/>
@@ -88,7 +87,6 @@ const Slideshow = ({ images = [], slides = [], height = 520, interval = 4500 }) 
 									margin: "0 auto",
 									borderRadius: "18px",
 									boxShadow: "0 14px 40px rgba(0,0,0,0.35)",
-									border: "1px solid rgba(255,255,255,0.08)",
 									background: "rgba(2,6,23,0.25)"
 								}}
 							/>

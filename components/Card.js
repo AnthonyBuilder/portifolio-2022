@@ -37,13 +37,13 @@ const Card = ({ titulo, subtitulo, image, iconName, link }) => {
         }
       }}
         style={{
-          margin: 10
+          margin: typeof window !== 'undefined' && window.innerWidth < 600 ? 0 : 10
         }}>
         <Image className={styles.iconCard} src={iconName} width={50} height={50} objectFit="cover"></Image>
           <div className={styles.card}>
           <div className={styles.imageScreen}>
   
-          <Image src={image} width={300} height={400} objectFit="contain"></Image>
+          <Image src={image} width={350} height={450} objectFit="contain" priority></Image>
   
           </div>
           <h2>{titulo}</h2>

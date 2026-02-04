@@ -39,7 +39,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-        <main>
+        <main className={styles.pageTransition}>
           <HeroSection name={name} scrollPosition={scrollPosition} />
           <Presentation />
           
