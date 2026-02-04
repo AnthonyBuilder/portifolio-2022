@@ -19,7 +19,7 @@ const HeroSection = ({ name, scrollPosition }) => {
   const wobble = Math.sin(scrollPosition / 180.0) * (isMobile ? 2.5 : 5);
   const tilt = Math.cos(scrollPosition / 240.0) * (isMobile ? 2 : 4);
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
-  const imageShift = clamp(scrollPosition / 6, -45, 45);
+  const imageShift = isMobile ? 0 : clamp(scrollPosition / 6, -45, 45);
   const titleShift = clamp(scrollPosition / 10, -28, 28);
   const nameShift = clamp(scrollPosition / 12, -24, 24);
 
