@@ -7,8 +7,13 @@ const HeroSection = ({ name, scrollPosition }) => {
     <motion.div
       style={{
         textAlign: 'center',
-        marginTop: '3rem',
-        height: '750px',
+        marginTop: '2rem',
+        marginBottom: '15rem',
+        height: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
       initial="hidden"
       animate="visible"
@@ -31,10 +36,21 @@ const HeroSection = ({ name, scrollPosition }) => {
         },
       }}
     >
-      <h1 className={styles.title}>Bem Vindo ao meu portifólio.</h1>
+      <h1 className={styles.title} style={{
+        fontSize: 'clamp(2.4rem, 6vw, 4rem)',
+        marginBottom: '0.5rem',
+        color: '#6b7280',
+        fontWeight: '900',
+        letterSpacing: '-1px'
+      }}>Bem vindo ao meu portfólio.</h1>
 
       <div>
-        <p className={styles.description}>Meu nome é {name}.</p>
+        <p className={styles.description} style={{
+          fontSize: 'clamp(1.3rem, 3.5vw, 2rem)',
+          color: '#7a8a9c',
+          marginBottom: '2rem',
+          fontWeight: '600'
+        }}>Meu nome é <span style={{ color: '#38bdf8' }}>{name}</span></p>
       </div>
 
       <div className={styles.imageProfile}>
@@ -56,30 +72,77 @@ const HeroSection = ({ name, scrollPosition }) => {
         </a>
       </div>
 
-      <div className={styles.columnFlex}>
-        <motion.div className={styles.contactItems}>
+      <div className={styles.columnFlex} style={{
+        gap: '2rem',
+        marginTop: '2.5rem'
+      }}>
+        <a href="https://github.com/AnthonyBuilder" style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem',
+          padding: '0.8rem 1.5rem',
+          borderRadius: '12px',
+          background: 'rgba(56, 189, 248, 0.1)',
+          border: '1px solid rgba(56, 189, 248, 0.3)',
+          transition: 'all 0.3s ease',
+          textDecoration: 'none',
+          cursor: 'pointer'
+        }} onMouseEnter={(e) => {
+          e.currentTarget.style.background = 'rgba(56, 189, 248, 0.2)';
+          e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.6)';
+          e.currentTarget.style.transform = 'translateY(-4px)';
+        }} onMouseLeave={(e) => {
+          e.currentTarget.style.background = 'rgba(56, 189, 248, 0.1)';
+          e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.3)';
+          e.currentTarget.style.transform = 'translateY(0)';
+        }}>
           <Image
             src="/github-icon.png"
-            width={35}
-            height={35}
+            width={32}
+            height={32}
             objectFit="contain"
           />
-          <a href="https://github.com/AnthonyBuilder">
-            <h3>AnthonyBuilder</h3>
-          </a>
-        </motion.div>
+          <h3 style={{
+            margin: '0',
+            fontSize: 'clamp(1rem, 2vw, 1.3rem)',
+            color: '#38bdf8',
+            fontWeight: '600'
+          }}>GitHub</h3>
+        </a>
 
-        <motion.div className={styles.contactItems}>
+        <a href="https://www.linkedin.com/in/anthonyjs?trk=contact-info" style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem',
+          padding: '0.8rem 1.5rem',
+          borderRadius: '12px',
+          background: 'rgba(59, 130, 246, 0.1)',
+          border: '1px solid rgba(59, 130, 246, 0.3)',
+          transition: 'all 0.3s ease',
+          textDecoration: 'none',
+          cursor: 'pointer'
+        }} onMouseEnter={(e) => {
+          e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
+          e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.6)';
+          e.currentTarget.style.transform = 'translateY(-4px)';
+        }} onMouseLeave={(e) => {
+          e.currentTarget.style.background = 'rgba(59, 130, 246, 0.1)';
+          e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.3)';
+          e.currentTarget.style.transform = 'translateY(0)';
+        }}>
           <Image
             src="/linkedin.jpeg"
-            width={35}
-            height={35}
+            width={32}
+            height={32}
             objectFit="contain"
           />
-          <a href="https://www.linkedin.com/in/anthony-josé-94b151144/">
-            <h3>Linkedin</h3>
-          </a>
-        </motion.div>
+          <h3 style={{
+            margin: '0',
+            fontSize: 'clamp(1rem, 2vw, 1.3rem)',
+            color: '#3b82f6',
+            fontWeight: '600'
+          }}>LinkedIn</h3>
+        </a>
       </div>
     </motion.div>
   );

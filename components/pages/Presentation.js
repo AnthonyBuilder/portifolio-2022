@@ -39,7 +39,7 @@ const Presentation = () => {
                         ease: [0.19, 1, 0.22, 1], duration: 2
                     }
                 },
-            }}>
+            }} style={{ marginTop: '6rem' }}>
                 <div style={{
                     "display": "flex",
                     "flex-direction": "column",
@@ -50,7 +50,7 @@ const Presentation = () => {
                 }}>
                     <p style={{
                         "margin": "0rem 0rem 1.5rem 0rem",
-                        "color": "#b8c4d4",
+                        "color": "#7a8a9c",
                         "font-size": "clamp(1.05rem, 2.31vw, 1.47rem)",
                         "max-width": "720px",
                         "line-height": "1.8",
@@ -61,7 +61,7 @@ const Presentation = () => {
                     </p>
                     <p style={{
                         "margin": "0rem 0rem 5rem 0rem",
-                        "color": "#6b7280",
+                        "color": "#8fa4c4",
                         "font-size": "clamp(0.9rem, 1.9vw, 1.1rem)",
                         "max-width": "720px",
                         "line-height": "1.7",
@@ -72,14 +72,16 @@ const Presentation = () => {
                 </div>
                 <h1 style={{
                     "margin": "0rem 0rem .5rem clamp(0.5rem, 5vw, 2rem)",
-                    "font-weight": "800",
-                    "font-size": "clamp(1.8rem, 3.5vw, 3.2rem)",
-                    "text-align": "center"
+                    "font-weight": "900",
+                    "font-size": "clamp(1.89rem, 3.675vw, 3.36rem)",
+                    "text-align": "center",
+                    "color": "#ffffff",
+                    "letter-spacing": "-0.5px"
                 }}>Desenvolvedor Full stack</h1>
                 <h3 style={{
-                    "margin": "0rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
+                    "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
                     "color": "#676767",
-                    "font-size": "clamp(1rem, 2vw, 1.6rem)",
+                    "font-size": "clamp(1rem, 3vw, 1.4rem)",
                     "text-align": "center"
                 }}>Mobile e Web</h3>
 

@@ -48,8 +48,29 @@ export default function Invest() {
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
             <p>
-              Esse jogo implementa a arquitetura MVVM que define como a logica do jogo funciona e entrega ao usuario os resultados com animações.
+              Memorize é um jogo de memória implementado em SwiftUI seguindo a arquitetura MVVM. O projeto foi desenvolvido como parte do curso Stanford CS193P de desenvolvimento iOS, 
+              demonstrando sólidos conhecimentos de padrões de design e desenvolvimento reativo. O jogo oferece uma experiência envolvente com animações fluidas e lógica inteligente de gameplay.
             </p>
+          </div>
+          
+          <div className={styles.containerDescription}>
+            <h1>Arquitetura MVVM</h1>
+            <p>Implementação completa do padrão Model-View-ViewModel separando a lógica do jogo da apresentação. O modelo gerencia o estado das cartas, lógica de correspondência e pontuação, enquanto a View camada renderiza a interface de forma reativa.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Mecânica de Jogo</h1>
+            <p>Sistema robusto de lógica para emparelhamento de cartas com detecção automática de matches e manutenção de pontuação. O jogo oferece diferentes níveis de dificuldade e quantidade de cartas.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Animações Fluidas</h1>
+            <p>Transições suaves e animações visuais que melhoram a experiência do usuário. As cartas giram com efeito 3D quando reveladas e desaparecem quando acertadas, criando feedback visual satisfatório.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Customização Temática</h1>
+            <p>Suporte a temas visuais variados com diferentes emojis e temas de cores. Os usuários podem personalizar a aparência do jogo selecionando entre vários conjuntos de símbolos e paletas de cores.</p>
           </div>
           
           <div className={styles.movieContainer}>

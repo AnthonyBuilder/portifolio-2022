@@ -59,8 +59,10 @@ export default function DeliverTrack() {
 
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
-            <p>O aplicativo foi projetetado em swiftui realizando chamadas a uma api criada em NextJS para obter dados de objetos rastreaveis atráves do correios.
-              O objetivo é mante-lo atualizado buscando adquirir novos clientes, implementando novas empresas de transporte.
+            <p>
+              DeliverTrack é um aplicativo iOS de rastreamento de encomendas desenvolvido em SwiftUI com arquitetura escalável. 
+              O app comunica com uma API personalizada construída em Next.js para obter dados de rastreamento do Correios e outras transportadoras. 
+              A aplicação oferece atualizações em tempo real do status de pacotes, permitindo aos usuários monitorar entregas com precisão e receber notificações automáticas.
             </p>
           </div>
 
@@ -72,6 +74,27 @@ export default function DeliverTrack() {
           </div>
         </motion.div>
 
+        <div className={styles.container}>
+          <div className={styles.containerDescription}>
+            <h1>Rastreamento em Tempo Real</h1>
+            <p>Integração com APIs dos Correios e demais transportadoras para obter atualizações instantâneas da localização e status de pacotes. O sistema sincroniza dados regularmente para manter informações precisas e confiáveis.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>API Personalizada</h1>
+            <p>Backend desenvolvido em Next.js para agregação de dados de múltiplas transportadoras, processamento seguro de requisições e caching inteligente de informações de rastreamento.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Notificações Automáticas</h1>
+            <p>Sistema de push notifications que alerta usuários sobre mudanças no status de seus pacotes, atualizações de localização e eventos importantes na entrega.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Expansão de Transportadoras</h1>
+            <p>Roadmap inclui integração com outras empresas de transporte além dos Correios, oferecendo suporte abrangente para entregas nacionais e internacionais.</p>
+          </div>
+          </div>
         <style jsx global>{`
 
         * {

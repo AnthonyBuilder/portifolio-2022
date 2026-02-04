@@ -59,7 +59,7 @@ const Projetos = () => {
                 }}>Projetos</h1>
                 <h3 style={{
                     "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
-                    "color": "#676767",
+                    "color": "#7a8a9c",
                     "font-size": "clamp(1rem, 3vw, 1.4rem)"
                 }}>Sites Web</h3>
                 <Slideshow slides={[
@@ -68,7 +68,7 @@ const Projetos = () => {
                 ]} height={sliderHeight} />
                 <h3 style={{
                     "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
-                    "color": "#676767",
+                    "color": "#7a8a9c",
                     "font-size": "clamp(1rem, 3vw, 1.4rem)"
                 }}>Aplicações Mobile</h3>
                 <div style={{

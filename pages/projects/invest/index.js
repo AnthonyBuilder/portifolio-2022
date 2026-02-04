@@ -62,9 +62,8 @@ export default function Invest() {
 
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
-            <p>O Aplicativo foi feito em SwiftUI, ele implementa uma api da Celcoin para enviar e receber pix,
-               além de pagar contas e realizar recargas de celular. 
-               o Backend é no Firebase onde ficam armazenados todos os usuarios e seus dados.</p>
+            <p>O Invest Futuro é uma aplicação iOS de fintech desenvolvida em SwiftUI. O app implementa integração com a API da Celcoin para operações de envio e recebimento de Pix, além de funcionalidades para pagamento de contas e recargas de celular. 
+               O Backend utiliza Firebase para armazenar dados de usuários de forma segura e escalável, garantindo sincronização em tempo real.</p>
           </div>
 
 
@@ -78,22 +77,22 @@ export default function Invest() {
         <div className={styles.container}>
           <div className={styles.containerDescription}>
             <h1>CoreData</h1>
-            <p>Foi utilizado CoreData para modelagem de dados onde o aplicativo se contecta com o firebase para armazenar os dados dos usuarios.</p>
+            <p>Implementação de CoreData para modelagem e persistência de dados local. O aplicativo sincroniza dados com Firebase, permitindo que informações de usuários sejam armazenadas tanto localmente quanto na nuvem, garantindo acesso offline e performance otimizada.</p>
           </div>
 
           <div className={styles.containerDescription}>
-            <h1>Testes Unitarios</h1>
-            <p>Possui testes unitarios para corrigir bugs.</p>
+            <h1>Testes Unitários</h1>
+            <p>Suite completa de testes unitários para validar a lógica de negócios, integração com APIs e tratamento de erros. Os testes garantem qualidade de código e facilitam detecção de bugs em diferentes cenários.</p>
           </div>
 
           <div className={styles.containerDescription}>
             <h1>Segurança</h1>
-            <p>É utilizado criptografia para senhas definida pelo usuario e verificação por telefone.</p>
+            <p>Implementação de criptografia robusta para proteção de senhas definidas pelo usuário. Autenticação por telefone com verificação de OTP, garantindo acesso seguro e proteção contra acesso não autorizado.</p>
           </div>
 
           <div className={styles.containerDescription}>
             <h1>Webhook</h1>
-            <p>Webhook para notificar os usuarios sobre os pagamentos e recebimentos.</p>
+            <p>Sistema de webhook integrado para notificar usuários em tempo real sobre operações de pagamento e recebimento. As notificações são push notifications que mantêm o usuário informado sobre todas as transações realizadas.</p>
           </div>
         </div>
 

@@ -59,9 +59,9 @@ export default function ImagineIA() {
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
             <p>
-              ImagineIA é um aplicativo simples para gerar imagens através de texto usando a API da Dall-E,
-            é uma simples requisição utilizando o prompt do usuario, nas proximas versões será adicionado o recurso
-            de gerar variaçoes de imagens apartir de uma imagem salva no dispositivo.
+              ImagineIA é um aplicativo iOS inovador para gerar imagens de alta qualidade através de descrições em texto usando a poderosa API DALL-E 3. 
+              O app traduz prompts dos usuários em imagens visuais realistas e criativas. Versões futuras incluirão recursos avançados como geração de variações de imagens 
+              a partir de fotos do dispositivo, permitindo customização e exploração criativa ainda maior.
             </p>
           </div>
 
@@ -73,6 +73,27 @@ export default function ImagineIA() {
           </div>
         </motion.div>
 
+        <div className={styles.container}>
+          <div className={styles.containerDescription}>
+            <h1>Integração DALL-E</h1>
+            <p>Integração seamless com a API DALL-E para geração de imagens baseada em IA. O app envia prompts de texto e recebe imagens de alta qualidade geradas por inteligência artificial.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Interface Intuitiva</h1>
+            <p>Design clean e intuitivo que permite aos usuários descrever suas ideias de forma simples e natural, transformando conceitos em imagens visuais em segundos.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Armazenamento de Imagens</h1>
+            <p>Funcionalidade de salvar e gerenciar imagens geradas no dispositivo, permitindo galeria pessoal de criações e compartilhamento com outros usuários.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Futuras Melhorias</h1>
+            <p>Roadmap inclui geração de variações de imagens a partir de fotos do usuário, ferramentas de edição avançadas e possibilidade de refinamento iterativo de imagens geradas.</p>
+          </div>
+          </div>
         <style jsx global>{`
 
         * {

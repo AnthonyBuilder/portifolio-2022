@@ -72,7 +72,7 @@ export default function Home() {
           </div>
 
           <div className={styles.imageProfile}>
-            <a href="https://wa.me/5511942807999">
+            <a href="https://wa.me/5511939575273">
               <div className={styles.image} >
               <Image src='/profile.jpeg' width={200} height={200} objectFit="cover" style={{
                 "border-radius": "100%"
@@ -93,7 +93,7 @@ export default function Home() {
 
             <motion.div className={styles.contactItems}>
               <Image src="/linkedin.jpeg" width={35} height={35} objectFit="contain"></Image>
-              <a href='https://www.linkedin.com/in/anthony-josé-94b151144/'><h3>Linkedin</h3></a>
+              <a href='https://www.linkedin.com/in/anthonyjs?trk=contact-info'><h3>Linkedin</h3></a>
             </motion.div>
           </div>
         </motion.div>

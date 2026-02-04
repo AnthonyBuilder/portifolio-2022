@@ -54,9 +54,8 @@ export default function Invest() {
 
           <div className={styles.containerDescription}>
             <h1>Descrição</h1>
-            <p>O aplicativo implementa as apis de localização da própria apple, ele utiliza a localização atual para definir o ponto inicial e busca no banco de dados o local que o usuario está buscando, definindo a rota com as coordenadas.
-              Também armazena no CoreData os locais favoritos do usuário.
-            </p>
+            <p>Maps é um clone funcional do aplicativo Maps nativo da Apple, desenvolvido em SwiftUI. O app utiliza as APIs de localização do iOS para determinar a posição atual do usuário como ponto de partida. 
+              O sistema busca locais no banco de dados com base nas coordenadas GPS e traça rotas automáticas. Além disso, armazena locais favoritos do usuário através do CoreData, permitindo acesso rápido aos destinos mais frequentes.</p>
           </div>
 
 
@@ -67,6 +66,27 @@ export default function Invest() {
           </div>
         </motion.div>
 
+        <div className={styles.container}>
+          <div className={styles.containerDescription}>
+            <h1>APIs de Localização</h1>
+            <p>Integração completa com CLLocationManager para rastreamento de localização em tempo real. O app solicita permissões de localização apropriadas e atualiza a posição do usuário continuamente, garantindo rotas precisas.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Armazenamento de Favoritos</h1>
+            <p>Sistema de favoritos implementado com CoreData, permitindo que usuários salvem locais de interesse. Dados persistem entre sessões, oferecendo acesso rápido aos destinos salvos.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Cálculo de Rotas</h1>
+            <p>Algoritmo de cálculo de rotas que determina o caminho mais eficiente entre a localização atual e o destino usando as APIs nativas do MapKit.</p>
+          </div>
+
+          <div className={styles.containerDescription}>
+            <h1>Interface do Mapa</h1>
+            <p>Interface intuitiva e responsiva baseada em mapas interativos. Usuários podem fazer zoom, deslocar e interagir com o mapa para explorar locais e planejar rotas.</p>
+          </div>
+          </div>
         <style jsx global>{`
 
         * {

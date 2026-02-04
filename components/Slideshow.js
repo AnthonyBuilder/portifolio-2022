@@ -104,7 +104,7 @@ const Slideshow = ({ images = [], slides = [], height = 520, interval = 4500 }) 
 							<div style={{ fontSize: "1.4rem", fontWeight: 700 }}>{current.title}</div>
 						)}
 						{current.subtitle && (
-							<div style={{ fontSize: "1rem", color: "#9ca3af" }}>{current.subtitle}</div>
+							<div style={{ fontSize: "1rem", color: "#8fa4c4" }}>{current.subtitle}</div>
 						)}
 					</div>
 				)}
