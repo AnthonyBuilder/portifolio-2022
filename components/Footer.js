@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../pages/styles/main.module.scss';
 
 const Footer = () => {
@@ -5,7 +6,21 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
-          <h4>Anthony José</h4>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            marginBottom: '0.5rem'
+          }}>
+            <Image
+              src="/profile.jpeg"
+              width={36}
+              height={36}
+              objectFit="cover"
+              style={{ borderRadius: '50%' }}
+            />
+            <h4>Anthony José</h4>
+          </div>
           <p>Desenvolvedor Full Stack</p>
           <p>Mobile e Web</p>
         </div>

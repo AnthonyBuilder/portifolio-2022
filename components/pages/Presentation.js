@@ -71,7 +71,7 @@ const Presentation = () => {
                     </p>
                 </div>
                 <h1 style={{
-                    "margin": "0rem 0rem .5rem clamp(0.5rem, 5vw, 2rem)",
+                    "margin": "0rem 0rem .5rem 0rem",
                     "font-weight": "900",
                     "font-size": "clamp(1.89rem, 3.675vw, 3.36rem)",
                     "text-align": "center",
@@ -79,7 +79,7 @@ const Presentation = () => {
                     "letter-spacing": "-0.5px"
                 }}>Desenvolvedor Full stack</h1>
                 <h3 style={{
-                    "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
+                    "margin": "2rem 0rem 1rem 0rem",
                     "color": "#676767",
                     "font-size": "clamp(1rem, 3vw, 1.4rem)",
                     "text-align": "center"

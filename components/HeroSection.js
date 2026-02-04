@@ -7,7 +7,7 @@ const HeroSection = ({ name, scrollPosition }) => {
     <motion.div
       style={{
         textAlign: 'center',
-        marginTop: '2rem',
+        marginTop: '5rem',
         marginBottom: '15rem',
         height: 'auto',
         display: 'flex',
@@ -36,23 +36,6 @@ const HeroSection = ({ name, scrollPosition }) => {
         },
       }}
     >
-      <h1 className={styles.title} style={{
-        fontSize: 'clamp(2.4rem, 6vw, 4rem)',
-        marginBottom: '0.5rem',
-        color: '#6b7280',
-        fontWeight: '900',
-        letterSpacing: '-1px'
-      }}>Bem vindo ao meu portfólio.</h1>
-
-      <div>
-        <p className={styles.description} style={{
-          fontSize: 'clamp(1.3rem, 3.5vw, 2rem)',
-          color: '#7a8a9c',
-          marginBottom: '2rem',
-          fontWeight: '600'
-        }}>Meu nome é <span style={{ color: '#38bdf8' }}>{name}</span></p>
-      </div>
-
       <div className={styles.imageProfile}>
         <a href="https://wa.me/5511939575273">
           <div className={styles.image}>
@@ -70,6 +53,24 @@ const HeroSection = ({ name, scrollPosition }) => {
             <h6>Whatsapp</h6>
           </div>
         </a>
+      </div>
+
+      <h1 className={styles.title} style={{
+        fontSize: 'clamp(2.4rem, 6vw, 4rem)',
+        marginBottom: '-0.4rem',
+        color: '#6b7280',
+        fontWeight: '900',
+        letterSpacing: '-1px'
+      }}>Bem vindo ao meu portfólio.</h1>
+
+      <div>
+        <p className={styles.description} style={{
+          fontSize: 'clamp(1.3rem, 3.5vw, 2rem)',
+          color: '#7a8a9c',
+          marginTop: '0',
+          marginBottom: '0.2rem',
+          fontWeight: '600'
+        }}>Meu nome é <span style={{ color: '#38bdf8' }}>{name}</span></p>
       </div>
 
       <div className={styles.columnFlex} style={{
