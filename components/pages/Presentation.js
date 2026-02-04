@@ -50,8 +50,8 @@ const Presentation = () => {
                 }}>
                     <p style={{
                         "margin": "0rem 0rem 1.5rem 0rem",
-                        "color": "#9ca3af",
-                        "font-size": "clamp(1rem, 2.2vw, 1.4rem)",
+                        "color": "#b8c4d4",
+                        "font-size": "clamp(1.05rem, 2.31vw, 1.47rem)",
                         "max-width": "720px",
                         "line-height": "1.8",
                         "text-align": "center",
