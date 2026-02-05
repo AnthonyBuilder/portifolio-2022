@@ -93,7 +93,7 @@ const Presentation = () => {
                     <Carrousel></Carrousel>
                 </div>
                 <p style={{
-                    "margin": "1rem 0rem 0rem 0rem",
+                    "margin": "2rem 0rem 0rem 0rem",
                     "color": "#8fa4c4",
                     "font-size": "clamp(1rem, 2.6vw, 1.25rem)",
                     "line-height": "1.6",
