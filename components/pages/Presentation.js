@@ -88,9 +88,17 @@ const Presentation = () => {
                     "align-items": "center",
                     "justify-content": "center",
                     "flex-wrap": "wrap",
-                    "max-width": "100%"}}>
+                    "max-width": "100%",
+                    "margin-top": "1rem"}}>
                     <Carrousel></Carrousel>
                 </div>
+                <p style={{
+                    "margin": "1rem 0rem 0rem 0rem",
+                    "color": "#8fa4c4",
+                    "font-size": "clamp(1rem, 2.6vw, 1.25rem)",
+                    "line-height": "1.6",
+                    "text-align": "center"
+                }}>Disponível para freelas e projetos registrados, com contrato e entrega profissional.</p>
 
             </motion.div>
         </AnimatePresence>

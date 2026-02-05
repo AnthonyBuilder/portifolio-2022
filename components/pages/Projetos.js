@@ -53,10 +53,18 @@ const Projetos = () => {
                 },
             }}>
                 <h1 style={{
-                    "margin": "0rem 0rem .5rem clamp(0.5rem, 5vw, 2rem)",
-                    "font-weight": "800",
-                    "font-size": "clamp(1.8rem, 5vw, 2.5rem)"
-                }}>Projetos</h1>
+                    "margin": "0rem 0rem .4rem clamp(0.5rem, 5vw, 2rem)",
+                    "font-weight": "900",
+                    "font-size": "clamp(1.9rem, 5.2vw, 2.7rem)",
+                    "letter-spacing": "-0.5px"
+                }}>Projetos em destaque</h1>
+                <p style={{
+                    "margin": "0rem 0rem 1.2rem clamp(0.5rem, 5vw, 2rem)",
+                    "color": "#8fa4c4",
+                    "font-size": "clamp(0.95rem, 2.4vw, 1.2rem)",
+                    "max-width": "720px",
+                    "line-height": "1.7"
+                }}>Seleção de aplicações Web e Mobile com foco em performance, usabilidade e integrações reais.</p>
                 <h3 style={{
                     "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",
                     "color": "#7a8a9c",
