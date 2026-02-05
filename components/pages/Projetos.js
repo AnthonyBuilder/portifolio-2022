@@ -79,6 +79,13 @@ const Projetos = () => {
                     "color": "#7a8a9c",
                     "font-size": "clamp(1rem, 3vw, 1.4rem)"
                 }}>Aplicações Mobile</h3>
+                <p style={{
+                    "margin": "0rem 0rem 1.5rem clamp(0.5rem, 5vw, 2rem)",
+                    "color": "#8fa4c4",
+                    "font-size": "clamp(0.95rem, 2.2vw, 1.1rem)",
+                    "max-width": "720px",
+                    "line-height": "1.6"
+                }}>Aplicações nativas desenvolvidas em SwiftUI com foco em experiência do usuário, performance e integração com APIs modernas.</p>
                 <div style={{
                     "display": "flex",
                     "align-items": "center",
