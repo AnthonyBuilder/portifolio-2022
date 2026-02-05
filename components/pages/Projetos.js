@@ -18,7 +18,7 @@ const Projetos = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setSliderHeight(window.innerWidth < 768 ? 400 : 820);
+            setSliderHeight(window.innerWidth < 768 ? 280 : 360);
         };
         
         handleResize();
@@ -71,8 +71,8 @@ const Projetos = () => {
                     "font-size": "clamp(1rem, 3vw, 1.4rem)"
                 }}>Sites Web</h3>
                 <Slideshow slides={[
-                    { src: "/lingatec_frame.png", href: "https://ling-pied.vercel.app/", title: "Lingatec", subtitle: "Site institucional" },
-                    { src: "/papodepanela_frame.png", href: "https://papodepanela.site", title: "Papo de Panela", subtitle: "Projeto web" }
+                    { src: "/lingatec_frame.png", href: "https://ling-pied.vercel.app/", title: "Lingatec", subtitle: "Website institucional moderno desenvolvido com React e Next.js, focado em performance e experiência mobile-first com design responsivo e animações fluidas.", technologies: ["React", "NextJS", "Tailwindcss", "Mobile-First"], color: "#0f3a5c" },
+                    { src: "/papodepanela_frame.png", href: "https://papodepanela.site", title: "Papo de Panela", subtitle: "Plataforma web full-stack com sistema de gerenciamento de conteúdo dinâmico, integração com Firebase e interface responsiva para compartilhamento de receitas.", technologies: ["NextJS", "Firebase", "JavaScript", "Responsive"], color: "#2d5d45" }
                 ]} height={sliderHeight} />
                 <h3 style={{
                     "margin": "2rem 0rem 1rem clamp(0.5rem, 5vw, 2rem)",

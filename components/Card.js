@@ -46,8 +46,19 @@ const Card = ({ titulo, subtitulo, image, iconName, link }) => {
           <Image src={image} width={350} height={450} objectFit="contain" priority></Image>
   
           </div>
-          <h2>{titulo}</h2>
-          <h4>{subtitulo}</h4>
+          <h2 style={{
+            marginBottom: "0.5rem"
+          }}>{titulo}</h2>
+          <h4 style={{
+            marginBottom: "0.6rem",
+            lineHeight: "1.4"
+          }}>{subtitulo}</h4>
+          <p style={{
+            margin: "0.8rem 0 0 0",
+            fontSize: "clamp(0.85rem, 1.5vw, 0.95rem)",
+            color: "#a0afc4",
+            lineHeight: "1.5"
+          }}>Clique para explorar</p>
   
       </div>
       </motion.div>
